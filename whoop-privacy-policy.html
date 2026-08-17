@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Hatch Whoop Connector (Personal Dev)</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+h1 { font-size: 26px; }
+h2 { margin-top: 28px; font-size: 18px; }
+small { color: #666; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy - Hatch Whoop Connector</h1>
+<small>Last Updated: August 17, 2026 - Personal Development Version - Not Legal Advice</small>
+
+<p>This is a personal development integration that connects your Whoop account to your Hatch personal AI workspace. This policy describes what data is accessed and how it is handled.</p>
+
+<h2>Data We Access</h2>
+<p>When you connect Whoop, this app requests these Whoop OAuth scopes:</p>
+<ul>
+<li><code>read:recovery</code> - recovery scores, HRV, resting heart rate</li>
+<li><code>read:cycles</code> - daily strain, cycle data</li>
+<li><code>read:workout</code> - workout history</li>
+<li><code>read:sleep</code> - sleep duration, stages</li>
+<li><code>read:profile</code> - basic profile (name, email)</li>
+<li><code>read:body_measurement</code> - height, weight, max HR</li>
+<li><code>offline</code> - allows refresh token so you don't have to log in every time</li>
+</ul>
+
+<h2>How We Use It</h2>
+<p>Data is used only to show your own Whoop metrics inside Hatch (your private workspace) for personal wellness tracking, to support your weight-loss / fitness goals. We do not use it for advertising, profiling, or any other service.</p>
+
+<h2>Storage</h2>
+<p>Data is fetched via the official Whoop API at <code>api.prod.whoop.com</code> and stored only in your local Hatch workspace / local environment. No external database or third-party analytics.</p>
+
+<h2>Sharing</h2>
+<p>We do not sell, rent, or share your Whoop data with third parties. No data is shared with anyone other than you.</p>
+
+<h2>Deletion & Revoke</h2>
+<p>You can revoke access anytime:</p>
+<ol>
+<li>In Whoop app: Settings > App Settings > Manage Connected Apps > Revoke</li>
+<li>In Hatch: Disconnect the custom.whoop connector</li>
+<li>To delete local cached data: delete the files in your workspace skills storage.</li>
+</ol>
+<p>Upon revocation, refresh and access tokens are invalidated and no new data is fetched.</p>
+
+<h2>Security</h2>
+<p>OAuth tokens are stored via Hatch's auth system (authd) and never hard-coded or committed to GitHub. All API calls are over HTTPS.</p>
+
+<h2>Contact</h2>
+<p>This is a personal dev app by a Meta employee building a test integration. For issues, contact: [replace with your email] or open an issue on this repo.</p>
+<p>If this becomes an official Meta / Hatch integration, this policy will be replaced by the official Meta Privacy Policy at https://www.facebook.com/privacy/center/</p>
+
+<hr>
+<small>This template is for personal testing to satisfy Whoop's developer dashboard requirement for a Privacy Policy URL. It is not legal advice. For an official release, use Meta legal-approved policy.</small>
+
+</body>
+</html>
